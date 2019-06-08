@@ -6,10 +6,10 @@ cmake_minimum_required(VERSION 3.5.1)
 # below
 project(Geometry)
 
-# CMAKE VARIABLE - SRC. Points to all the source files
+# CMAKE variable - SRC. Points to all the source files
 # used to compile this library
 # set function is used to set a cmake variable
-set(SRC ${PROJECT_SOURCE_DIR}/Source/Point2D.cpp)
+set(SRC ${PROJECT_SOURCE_DIR}/Source/Point2D.cpp ${PROJECT_SOURCE_DIR}/Source/Circle.cpp)
 
 # Add a shared library target - Geometry
 add_library(Geometry SHARED ${SRC})
